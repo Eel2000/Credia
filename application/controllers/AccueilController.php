@@ -13,9 +13,9 @@ class AccueilController extends CI_Controller {
 
 		$equipements =  $this->EquipementModel->getEquipements();
 		$eq = $this->EquipementModel->getArticleEquipements();
-
+		
 		$data = array('equipements' => $equipements);
-
+		print_r($data);
 		$this->load->view('inventaire', $data);
 	}
 
